@@ -27,7 +27,7 @@ help {
         println ""
         println "************************************************************************ "
         println "***                                                                  *** "
-        println "*** Welcome to https://github.com/qa-guru/demoqa-test-16!            *** "
+        println "*** Welcome to https://github.com/AraslanovRuslan/demoqa.com_AR16!            *** "
         println "***                                                                  *** "
         println "*** ./gradlew help                                                   *** "
         println "***                                                                  *** "
