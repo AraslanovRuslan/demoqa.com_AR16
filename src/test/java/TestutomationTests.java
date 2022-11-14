@@ -35,28 +35,27 @@ public class TestutomationTests {
         $(".react-datepicker__day--026").click();
         $("#subjectsInput").click();
         $("#subjectsInput").setValue("Painting");
-        $("#subjectsInput").pressEnter();
         $("#subjectsInput").pressTab();
         $("#hobbies-checkbox-2").parent().click();
-        $("#uploadPicture").uploadFile(new File("src/test/resources1/paddington-g51aae444a_640.png"));
-        $("#currentAddress").setValue("Some Address");
+        $("[id=uploadPicture]").uploadFile(new File("src/test/resources/paddington-g51aae444a_640.jpg"));
+        $("#currentAddress").setValue("Some Address111");
         $("#state").click();
-        $("#stateCity-wrapper").$(byText("NCR")).click();
+        $("#stateCity-wrapper").$(byText("Uttar Pradesh")).click();
         $("#city").click();
-        $("#stateCity-wrapper").$(byText("Delhi")).click();
+        $("#stateCity-wrapper").$(byText("Agra")).click();
         $("#submit").click();
 
         $(".modal-content").shouldBe(Condition.visible);
-        $(".modal-content").shouldHave(text("Mike Turilov"));
-        $(".modal-content").shouldHave(text("example@google.com"));
-        $(".modal-content").shouldHave(text("Male"));
-        $(".modal-content").shouldHave(text("9001546995"));
-        $(".modal-content").shouldHave(text("12 January,1985"));
-        $(".modal-content").shouldHave(text("Maths"));
-        $(".modal-content").shouldHave(text("Sports"));
-        $(".modal-content").shouldHave(text("1.png"));
-        $(".modal-content").shouldHave(text("Some Address"));
-        $(".modal-content").shouldHave(text("NCR Delhi"));
+        $(".modal-content").shouldHave(text("Ivan Ivanov"));
+        $(".modal-content").shouldHave(text("Ivanov@mail.ru"));
+        $(".modal-content").shouldHave(text("Other"));
+        $(".modal-content").shouldHave(text("89000765432"));
+        $(".modal-content").shouldHave(text("26 May,1990"));
+        $(".modal-content").shouldHave(text("Painting"));
+        $(".modal-content").shouldHave(text("Reading"));
+        $(".modal-content").shouldHave(text("paddington-g51aae444a_640.png"));
+        $(".modal-content").shouldHave(text("Some Address111"));
+        $(".modal-content").shouldHave(text("Uttar Pradesh Agra"));
         $("#closeLargeModal").click();
 
     }
